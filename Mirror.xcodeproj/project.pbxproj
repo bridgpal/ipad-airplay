@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0532BA3DE441F0149FDBADCE /* http_response.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E6818386FF7AD1FA3C3C3 /* http_response.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		12D87F3CD7D9579DD5697BD7 /* raop_rtp.c in Sources */ = {isa = PBXBuildFile; fileRef = C6D8EF6BAB9584DB8C59D0DD /* raop_rtp.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		12E839D8CB4095CA3A7728CD /* raop_rtp_mirror.c in Sources */ = {isa = PBXBuildFile; fileRef = 66B4DC40FC554C933CECC4AB /* raop_rtp_mirror.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		27F24D732BC68EBC43D8A339 /* raop_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1635204524C1112E0B511DE7 /* raop_buffer.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		2A9FF8D67059EEF7CD1AADE9 /* raop_ntp.c in Sources */ = {isa = PBXBuildFile; fileRef = 23A0B4D22513D73305553F91 /* raop_ntp.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		3326C11CF041BECDD7841E9E /* sap_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 76290283EA4C424E8315C586 /* sap_hash.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		385718E85B754FAAA738175D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11F9A7F380B1011A8570942 /* VideoToolbox.framework */; };
+		3F5C00A4095FF38004DC707B /* pairing.c in Sources */ = {isa = PBXBuildFile; fileRef = D76BCF487741806456B29840 /* pairing.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		4201B17C317951F054C06346 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F4A80C779E204620BF9B4D /* CoreMedia.framework */; };
+		44B8D18853EB220FC0DADCA4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F3DD3EAA7EBFED72C6E0B2 /* AVFoundation.framework */; };
+		4EC162EF3509FFB232A9973D /* srp.c in Sources */ = {isa = PBXBuildFile; fileRef = DEEB5ECA7AF1DEB2F3CA37D9 /* srp.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		4F4AC7F08E38D8B94B43762D /* playfair.c in Sources */ = {isa = PBXBuildFile; fileRef = F3B5DB3E7FA9615791EA3842 /* playfair.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		511BD7492E0009878C67CCA9 /* fairplay_playfair.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6664D84F70EE3E4AB7C17 /* fairplay_playfair.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		664AB64BE5040EB6EB7498CA /* airplay_video.c in Sources */ = {isa = PBXBuildFile; fileRef = B3F98D7FF1131891593DCF66 /* airplay_video.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		66ED62AA1D913004C94BFD1C /* compat.c in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAC3D94C8268E8C1C798E /* compat.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		6963AC22D91E208890E05A58 /* dnssd.c in Sources */ = {isa = PBXBuildFile; fileRef = DCCD680F4BF51C79ED1BCD6E /* dnssd.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		71B8F9047CB0E7D565E90AB3 /* llhttp.c in Sources */ = {isa = PBXBuildFile; fileRef = C1FA05E58BBE0616455DF2FC /* llhttp.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		76798C946BB612BC788A82A8 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = F9447248B6F47E6738ABA877 /* LICENSE.md */; };
+		7FD2ED971F3086BE5AA1F125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF47088136F4042A5785D3A5 /* Assets.xcassets */; };
+		80C1874B0C1E71144787CDD6 /* raop.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E66A687E165568F76D0BCD9 /* raop.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		832BDD1904C8D77C2011E9E3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CDCA12049C4FFCFA401712 /* AudioToolbox.framework */; };
+		884D02B6A84EFB3F1DBA9DD4 /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = 29863B1034B7A2FE231C6FA8 /* http.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		91350C5CD369228E0AA5266A /* mirror_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F29F785E1403DB9E08677 /* mirror_buffer.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		92506585796649A00B0B0223 /* crypto.c in Sources */ = {isa = PBXBuildFile; fileRef = B30EBA37FECF1E9F04D519E1 /* crypto.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		94B0FE753FD80805C6530C69 /* dns_sd.c in Sources */ = {isa = PBXBuildFile; fileRef = 0354F601E28F9D2796BADB91 /* dns_sd.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		9C12A32CF540D0A4B96B2CEF /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 1046EE3BE17113B01E389CEA /* utils.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		A5772EDBEF9223BB1FFBCD91 /* http_request.c in Sources */ = {isa = PBXBuildFile; fileRef = E491CA72F105B91A1E8E2901 /* http_request.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		B08C948CE18699FB16A6A681 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF4E7CDDC1641545746B353 /* libz.tbd */; };
+		B14A9F1FEA5048887DF12943 /* byteutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 52D2A191735D837209EDBD38 /* byteutils.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		B2EFFC146ABDCE8CC9BD707D /* libplist-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8504878E082FC5A04F8F8A /* libplist-2.0.a */; };
+		B5390ECEE7C0EAA9889F37BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1048723CB2DF5DB9E5E45B /* main.m */; };
+		BA92765993125ADB0F9822DF /* netutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 18C827EB3560BA8167F392A1 /* netutils.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		C0611674672F6C170906F8F3 /* logger.c in Sources */ = {isa = PBXBuildFile; fileRef = B6F18B154797B3E4B46C0E1E /* logger.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		C225DF10AC9E49F370D182B7 /* hand_garble.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB4E8D77BB6B01D1CB04CA /* hand_garble.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		C9F679FC313E376C70BEA1EB /* httpd.c in Sources */ = {isa = PBXBuildFile; fileRef = 36F35C847CF887BBCA93152C /* httpd.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		DF23DD2043B123B5ADF907AB /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 46F481FC9AF5C46AC50430FB /* api.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		E5B0A1E2A8588AE223D7B28D /* omg_hax.c in Sources */ = {isa = PBXBuildFile; fileRef = AACF61CE1C8E648C95D2BE6D /* omg_hax.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		EA6DF335AF3B46E16A5D2C56 /* modified_md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F8893976FAF6473DF7A9B /* modified_md5.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		F5E74143C22AC207F695AC1F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACA3DF85E546D67DE56FC3 /* libcrypto.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01F6A59202B5C8AF3048C68D /* airplay_video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airplay_video.h; sourceTree = "<group>"; };
+		0354F601E28F9D2796BADB91 /* dns_sd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dns_sd.c; sourceTree = "<group>"; };
+		04731FDE33155D89D2285DF4 /* llhttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = llhttp.h; sourceTree = "<group>"; };
+		0C1048723CB2DF5DB9E5E45B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1046EE3BE17113B01E389CEA /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		15ACA3DF85E546D67DE56FC3 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Vendor/Dependencies/lib/libcrypto.a; sourceTree = "<group>"; };
+		1635204524C1112E0B511DE7 /* raop_buffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = raop_buffer.c; sourceTree = "<group>"; };
+		16F23C34057C094B5807C18A /* httpd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = httpd.h; sourceTree = "<group>"; };
+		18C827EB3560BA8167F392A1 /* netutils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = netutils.c; sourceTree = "<group>"; };
+		1AEC7BFFF344962F26EC8458 /* Mirror.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Mirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CE678366CB797EC33D09B6 /* stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
+		23A0B4D22513D73305553F91 /* raop_ntp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = raop_ntp.c; sourceTree = "<group>"; };
+		24380DF8594B48290B2BD230 /* raop_ntp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raop_ntp.h; sourceTree = "<group>"; };
+		29863B1034B7A2FE231C6FA8 /* http.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http.c; sourceTree = "<group>"; };
+		2E66A687E165568F76D0BCD9 /* raop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = raop.c; sourceTree = "<group>"; };
+		2FFB4E8D77BB6B01D1CB04CA /* hand_garble.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hand_garble.c; sourceTree = "<group>"; };
+		345DD623A9B87F14048F0604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		36BA57E73D735647D1CCE5CE /* crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		36F35C847CF887BBCA93152C /* httpd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = httpd.c; sourceTree = "<group>"; };
+		3BC57F83830A6006416B7294 /* global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		450DD69E5E59A131A725C1F9 /* raop_rtp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raop_rtp.h; sourceTree = "<group>"; };
+		46F481FC9AF5C46AC50430FB /* api.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = api.c; sourceTree = "<group>"; };
+		4CF79194DADD6598518E4037 /* raop_handlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raop_handlers.h; sourceTree = "<group>"; };
+		52D2A191735D837209EDBD38 /* byteutils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = byteutils.c; sourceTree = "<group>"; };
+		530092FE541C8E9C584BA7C9 /* sockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sockets.h; sourceTree = "<group>"; };
+		5D1F8893976FAF6473DF7A9B /* modified_md5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = modified_md5.c; sourceTree = "<group>"; };
+		5E59D961418B5925BE855D1B /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		60D0E3C9ED04513CC75D043A /* netutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = netutils.h; sourceTree = "<group>"; };
+		61F3DD3EAA7EBFED72C6E0B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		628D05E128EB705512E53C2C /* fairplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fairplay.h; sourceTree = "<group>"; };
+		66B4DC40FC554C933CECC4AB /* raop_rtp_mirror.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = raop_rtp_mirror.c; sourceTree = "<group>"; };
+		69CDCA12049C4FFCFA401712 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6D0E6818386FF7AD1FA3C3C3 /* http_response.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http_response.c; sourceTree = "<group>"; };
+		6FD9BB4C10513B5E9CAD85A5 /* srp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		738AFE4025AB25788784A222 /* dnssdint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dnssdint.h; sourceTree = "<group>"; };
+		76290283EA4C424E8315C586 /* sap_hash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sap_hash.c; sourceTree = "<group>"; };
+		7A3F784EB5949FAD7EBD626E /* threads.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threads.h; sourceTree = "<group>"; };
+		7B3F29F785E1403DB9E08677 /* mirror_buffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mirror_buffer.c; sourceTree = "<group>"; };
+		812047F7374EAF5CCCBE8C27 /* fcup_request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fcup_request.h; sourceTree = "<group>"; };
+		893B6D7359BB9573CCCE676C /* http_request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = http_request.h; sourceTree = "<group>"; };
+		8FB6664D84F70EE3E4AB7C17 /* fairplay_playfair.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fairplay_playfair.c; sourceTree = "<group>"; };
+		A19669387E3CCA157CD4B945 /* compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
+		A7351CCFE376461C2A47E7A5 /* mirror_buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mirror_buffer.h; sourceTree = "<group>"; };
+		AACF61CE1C8E648C95D2BE6D /* omg_hax.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = omg_hax.c; sourceTree = "<group>"; };
+		AD8504878E082FC5A04F8F8A /* libplist-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libplist-2.0.a"; path = "Vendor/Dependencies/lib/libplist-2.0.a"; sourceTree = "<group>"; };
+		B27BA7DFDDF5A673D2B6283F /* raop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raop.h; sourceTree = "<group>"; };
+		B30EBA37FECF1E9F04D519E1 /* crypto.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = crypto.c; sourceTree = "<group>"; };
+		B3F98D7FF1131891593DCF66 /* airplay_video.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = airplay_video.c; sourceTree = "<group>"; };
+		B6F18B154797B3E4B46C0E1E /* logger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = logger.c; sourceTree = "<group>"; };
+		BAC727718A0D67F29DF19E9B /* omg_hax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = omg_hax.h; sourceTree = "<group>"; };
+		BF47088136F4042A5785D3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C02FD14CF0FB0926E177CE4D /* pairing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pairing.h; sourceTree = "<group>"; };
+		C0AA661A354BC8B0AB9B9BD5 /* raop_rtp_mirror.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raop_rtp_mirror.h; sourceTree = "<group>"; };
+		C1FA05E58BBE0616455DF2FC /* llhttp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = llhttp.c; sourceTree = "<group>"; };
+		C6D8EF6BAB9584DB8C59D0DD /* raop_rtp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = raop_rtp.c; sourceTree = "<group>"; };
+		C9DBCC9EB4B15B046E35395E /* playfair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = playfair.h; sourceTree = "<group>"; };
+		CF9F7DCB87DEC9CEA7D49373 /* http_handlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = http_handlers.h; sourceTree = "<group>"; };
+		D1CEF8ADE4A2E9232823C53C /* dnssd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dnssd.h; sourceTree = "<group>"; };
+		D76BCF487741806456B29840 /* pairing.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pairing.c; sourceTree = "<group>"; };
+		D7EB4845D08DE8CFDEBF7243 /* LICENSE-MIT */ = {isa = PBXFileReference; path = "LICENSE-MIT"; sourceTree = "<group>"; };
+		DCCD680F4BF51C79ED1BCD6E /* dnssd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dnssd.c; sourceTree = "<group>"; };
+		DEEB5ECA7AF1DEB2F3CA37D9 /* srp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = srp.c; sourceTree = "<group>"; };
+		DF3EA835E9EFE051B51B255F /* raop_buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raop_buffer.h; sourceTree = "<group>"; };
+		E0C1082185365AE8D57E279F /* logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		E491CA72F105B91A1E8E2901 /* http_request.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http_request.c; sourceTree = "<group>"; };
+		E7F4A80C779E204620BF9B4D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EE9EAC3D94C8268E8C1C798E /* compat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = compat.c; sourceTree = "<group>"; };
+		EEF4E7CDDC1641545746B353 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F11F9A7F380B1011A8570942 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		F3B5DB3E7FA9615791EA3842 /* playfair.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = playfair.c; sourceTree = "<group>"; };
+		F9447248B6F47E6738ABA877 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		F9B72C9742EFE8E0C7E89C31 /* http_response.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = http_response.h; sourceTree = "<group>"; };
+		FF1F2F387810D9C492A56531 /* byteutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = byteutils.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F03CBD3DCB58DB2C0ABD4091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B8D18853EB220FC0DADCA4 /* AVFoundation.framework in Frameworks */,
+				832BDD1904C8D77C2011E9E3 /* AudioToolbox.framework in Frameworks */,
+				4201B17C317951F054C06346 /* CoreMedia.framework in Frameworks */,
+				385718E85B754FAAA738175D /* VideoToolbox.framework in Frameworks */,
+				B08C948CE18699FB16A6A681 /* libz.tbd in Frameworks */,
+				F5E74143C22AC207F695AC1F /* libcrypto.a in Frameworks */,
+				B2EFFC146ABDCE8CC9BD707D /* libplist-2.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		197FA4CF8A21FFABE6ACAF49 /* llhttp */ = {
+			isa = PBXGroup;
+			children = (
+				46F481FC9AF5C46AC50430FB /* api.c */,
+				29863B1034B7A2FE231C6FA8 /* http.c */,
+				D7EB4845D08DE8CFDEBF7243 /* LICENSE-MIT */,
+				C1FA05E58BBE0616455DF2FC /* llhttp.c */,
+				04731FDE33155D89D2285DF4 /* llhttp.h */,
+			);
+			path = llhttp;
+			sourceTree = "<group>";
+		};
+		5E8FBA9FBD5CA82BA58D762B /* dns_sd */ = {
+			isa = PBXGroup;
+			children = (
+				0354F601E28F9D2796BADB91 /* dns_sd.c */,
+			);
+			path = dns_sd;
+			sourceTree = "<group>";
+		};
+		60677C36157AC41ADAC5FABD = {
+			isa = PBXGroup;
+			children = (
+				ACCF51ACB298FD7C2D4524D9 /* Mirror */,
+				624B3716DE1680FB7010F4C9 /* UxPlay */,
+				EC582349A95149492D34EA73 /* Frameworks */,
+				EDE85CD2407C4419DCBF8395 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		624B3716DE1680FB7010F4C9 /* UxPlay */ = {
+			isa = PBXGroup;
+			children = (
+				B3F98D7FF1131891593DCF66 /* airplay_video.c */,
+				01F6A59202B5C8AF3048C68D /* airplay_video.h */,
+				52D2A191735D837209EDBD38 /* byteutils.c */,
+				FF1F2F387810D9C492A56531 /* byteutils.h */,
+				EE9EAC3D94C8268E8C1C798E /* compat.c */,
+				A19669387E3CCA157CD4B945 /* compat.h */,
+				B30EBA37FECF1E9F04D519E1 /* crypto.c */,
+				36BA57E73D735647D1CCE5CE /* crypto.h */,
+				DCCD680F4BF51C79ED1BCD6E /* dnssd.c */,
+				D1CEF8ADE4A2E9232823C53C /* dnssd.h */,
+				738AFE4025AB25788784A222 /* dnssdint.h */,
+				8FB6664D84F70EE3E4AB7C17 /* fairplay_playfair.c */,
+				628D05E128EB705512E53C2C /* fairplay.h */,
+				812047F7374EAF5CCCBE8C27 /* fcup_request.h */,
+				3BC57F83830A6006416B7294 /* global.h */,
+				CF9F7DCB87DEC9CEA7D49373 /* http_handlers.h */,
+				E491CA72F105B91A1E8E2901 /* http_request.c */,
+				893B6D7359BB9573CCCE676C /* http_request.h */,
+				6D0E6818386FF7AD1FA3C3C3 /* http_response.c */,
+				F9B72C9742EFE8E0C7E89C31 /* http_response.h */,
+				36F35C847CF887BBCA93152C /* httpd.c */,
+				16F23C34057C094B5807C18A /* httpd.h */,
+				B6F18B154797B3E4B46C0E1E /* logger.c */,
+				E0C1082185365AE8D57E279F /* logger.h */,
+				7B3F29F785E1403DB9E08677 /* mirror_buffer.c */,
+				A7351CCFE376461C2A47E7A5 /* mirror_buffer.h */,
+				18C827EB3560BA8167F392A1 /* netutils.c */,
+				60D0E3C9ED04513CC75D043A /* netutils.h */,
+				D76BCF487741806456B29840 /* pairing.c */,
+				C02FD14CF0FB0926E177CE4D /* pairing.h */,
+				1635204524C1112E0B511DE7 /* raop_buffer.c */,
+				DF3EA835E9EFE051B51B255F /* raop_buffer.h */,
+				4CF79194DADD6598518E4037 /* raop_handlers.h */,
+				23A0B4D22513D73305553F91 /* raop_ntp.c */,
+				24380DF8594B48290B2BD230 /* raop_ntp.h */,
+				66B4DC40FC554C933CECC4AB /* raop_rtp_mirror.c */,
+				C0AA661A354BC8B0AB9B9BD5 /* raop_rtp_mirror.h */,
+				C6D8EF6BAB9584DB8C59D0DD /* raop_rtp.c */,
+				450DD69E5E59A131A725C1F9 /* raop_rtp.h */,
+				2E66A687E165568F76D0BCD9 /* raop.c */,
+				B27BA7DFDDF5A673D2B6283F /* raop.h */,
+				530092FE541C8E9C584BA7C9 /* sockets.h */,
+				DEEB5ECA7AF1DEB2F3CA37D9 /* srp.c */,
+				6FD9BB4C10513B5E9CAD85A5 /* srp.h */,
+				21CE678366CB797EC33D09B6 /* stream.h */,
+				7A3F784EB5949FAD7EBD626E /* threads.h */,
+				1046EE3BE17113B01E389CEA /* utils.c */,
+				5E59D961418B5925BE855D1B /* utils.h */,
+				5E8FBA9FBD5CA82BA58D762B /* dns_sd */,
+				197FA4CF8A21FFABE6ACAF49 /* llhttp */,
+				C0C813A320EA3BA6FE7982AC /* playfair */,
+			);
+			name = UxPlay;
+			path = Vendor/UxPlay;
+			sourceTree = "<group>";
+		};
+		ACCF51ACB298FD7C2D4524D9 /* Mirror */ = {
+			isa = PBXGroup;
+			children = (
+				BF47088136F4042A5785D3A5 /* Assets.xcassets */,
+				345DD623A9B87F14048F0604 /* Info.plist */,
+				0C1048723CB2DF5DB9E5E45B /* main.m */,
+			);
+			path = Mirror;
+			sourceTree = "<group>";
+		};
+		C0C813A320EA3BA6FE7982AC /* playfair */ = {
+			isa = PBXGroup;
+			children = (
+				2FFB4E8D77BB6B01D1CB04CA /* hand_garble.c */,
+				F9447248B6F47E6738ABA877 /* LICENSE.md */,
+				5D1F8893976FAF6473DF7A9B /* modified_md5.c */,
+				AACF61CE1C8E648C95D2BE6D /* omg_hax.c */,
+				BAC727718A0D67F29DF19E9B /* omg_hax.h */,
+				F3B5DB3E7FA9615791EA3842 /* playfair.c */,
+				C9DBCC9EB4B15B046E35395E /* playfair.h */,
+				76290283EA4C424E8315C586 /* sap_hash.c */,
+			);
+			path = playfair;
+			sourceTree = "<group>";
+		};
+		EC582349A95149492D34EA73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69CDCA12049C4FFCFA401712 /* AudioToolbox.framework */,
+				61F3DD3EAA7EBFED72C6E0B2 /* AVFoundation.framework */,
+				E7F4A80C779E204620BF9B4D /* CoreMedia.framework */,
+				15ACA3DF85E546D67DE56FC3 /* libcrypto.a */,
+				AD8504878E082FC5A04F8F8A /* libplist-2.0.a */,
+				EEF4E7CDDC1641545746B353 /* libz.tbd */,
+				F11F9A7F380B1011A8570942 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDE85CD2407C4419DCBF8395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AEC7BFFF344962F26EC8458 /* Mirror.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		641264E2E78C798538194157 /* Mirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3C23D676EE9E61D3A9CC76 /* Build configuration list for PBXNativeTarget "Mirror" */;
+			buildPhases = (
+				5AE1BB719A8672AF16E99576 /* Sources */,
+				3A10D8E745F91A781DE63CD2 /* Resources */,
+				F03CBD3DCB58DB2C0ABD4091 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mirror;
+			packageProductDependencies = (
+			);
+			productName = Mirror;
+			productReference = 1AEC7BFFF344962F26EC8458 /* Mirror.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40C4CEA8C08ECEDEDE5DCC84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					641264E2E78C798538194157 = {
+						DevelopmentTeam = 6ZXL6T6KU5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 02E1EC886FF768802A008E1F /* Build configuration list for PBXProject "Mirror" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 60677C36157AC41ADAC5FABD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EDE85CD2407C4419DCBF8395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				641264E2E78C798538194157 /* Mirror */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A10D8E745F91A781DE63CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD2ED971F3086BE5AA1F125 /* Assets.xcassets in Resources */,
+				76798C946BB612BC788A82A8 /* LICENSE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AE1BB719A8672AF16E99576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664AB64BE5040EB6EB7498CA /* airplay_video.c in Sources */,
+				DF23DD2043B123B5ADF907AB /* api.c in Sources */,
+				B14A9F1FEA5048887DF12943 /* byteutils.c in Sources */,
+				66ED62AA1D913004C94BFD1C /* compat.c in Sources */,
+				92506585796649A00B0B0223 /* crypto.c in Sources */,
+				94B0FE753FD80805C6530C69 /* dns_sd.c in Sources */,
+				6963AC22D91E208890E05A58 /* dnssd.c in Sources */,
+				511BD7492E0009878C67CCA9 /* fairplay_playfair.c in Sources */,
+				C225DF10AC9E49F370D182B7 /* hand_garble.c in Sources */,
+				884D02B6A84EFB3F1DBA9DD4 /* http.c in Sources */,
+				A5772EDBEF9223BB1FFBCD91 /* http_request.c in Sources */,
+				0532BA3DE441F0149FDBADCE /* http_response.c in Sources */,
+				C9F679FC313E376C70BEA1EB /* httpd.c in Sources */,
+				71B8F9047CB0E7D565E90AB3 /* llhttp.c in Sources */,
+				C0611674672F6C170906F8F3 /* logger.c in Sources */,
+				B5390ECEE7C0EAA9889F37BB /* main.m in Sources */,
+				91350C5CD369228E0AA5266A /* mirror_buffer.c in Sources */,
+				EA6DF335AF3B46E16A5D2C56 /* modified_md5.c in Sources */,
+				BA92765993125ADB0F9822DF /* netutils.c in Sources */,
+				E5B0A1E2A8588AE223D7B28D /* omg_hax.c in Sources */,
+				3F5C00A4095FF38004DC707B /* pairing.c in Sources */,
+				4F4AC7F08E38D8B94B43762D /* playfair.c in Sources */,
+				80C1874B0C1E71144787CDD6 /* raop.c in Sources */,
+				27F24D732BC68EBC43D8A339 /* raop_buffer.c in Sources */,
+				2A9FF8D67059EEF7CD1AADE9 /* raop_ntp.c in Sources */,
+				12D87F3CD7D9579DD5697BD7 /* raop_rtp.c in Sources */,
+				12E839D8CB4095CA3A7728CD /* raop_rtp_mirror.c in Sources */,
+				3326C11CF041BECDD7841E9E /* sap_hash.c in Sources */,
+				4EC162EF3509FFB232A9973D /* srp.c in Sources */,
+				9C12A32CF540D0A4B96B2CEF /* utils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		90123DE5EDB51C5CD527A90C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6ZXL6T6KU5;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLIST_210,
+					PLIST_230,
+					NOHOLD,
+					"OPENSSL_API_COMPAT=0x10101000L",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/UxPlay",
+					"$(SRCROOT)/Vendor/UxPlay/playfair",
+					"$(SRCROOT)/Vendor/UxPlay/llhttp",
+					"$(SRCROOT)/Vendor/Dependencies/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/Dependencies/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anil.ipadmirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EF28F256812CA5838E24541B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Vendor/Dependencies/lib\"",
+				);
+				INFOPLIST_FILE = Mirror/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F458B13C0E52823247365252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6ZXL6T6KU5;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					PLIST_210,
+					PLIST_230,
+					NOHOLD,
+					"OPENSSL_API_COMPAT=0x10101000L",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/UxPlay",
+					"$(SRCROOT)/Vendor/UxPlay/playfair",
+					"$(SRCROOT)/Vendor/UxPlay/llhttp",
+					"$(SRCROOT)/Vendor/Dependencies/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendor/Dependencies/lib",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anil.ipadmirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		F9335D3B996BE27614F379EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Vendor/Dependencies/lib\"",
+				);
+				INFOPLIST_FILE = Mirror/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02E1EC886FF768802A008E1F /* Build configuration list for PBXProject "Mirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90123DE5EDB51C5CD527A90C /* Debug */,
+				F458B13C0E52823247365252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E3C23D676EE9E61D3A9CC76 /* Build configuration list for PBXNativeTarget "Mirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF28F256812CA5838E24541B /* Debug */,
+				F9335D3B996BE27614F379EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40C4CEA8C08ECEDEDE5DCC84 /* Project object */;
+}

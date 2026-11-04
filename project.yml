@@ -1,0 +1,63 @@
+name: Mirror
+options:
+  deploymentTarget:
+    iOS: '17.0'
+settings:
+  base:
+    DEVELOPMENT_TEAM: 6ZXL6T6KU5
+    PRODUCT_BUNDLE_IDENTIFIER: com.anil.ipadmirror
+    CODE_SIGN_STYLE: Automatic
+    IPHONEOS_DEPLOYMENT_TARGET: '17.0'
+    TARGETED_DEVICE_FAMILY: '2'
+    HEADER_SEARCH_PATHS:
+      - $(SRCROOT)/Vendor/UxPlay
+      - $(SRCROOT)/Vendor/UxPlay/playfair
+      - $(SRCROOT)/Vendor/UxPlay/llhttp
+      - $(SRCROOT)/Vendor/Dependencies/include
+    LIBRARY_SEARCH_PATHS:
+      - $(SRCROOT)/Vendor/Dependencies/lib
+    GCC_PREPROCESSOR_DEFINITIONS: ['$(inherited)', 'PLIST_210', 'PLIST_230', 'NOHOLD', 'OPENSSL_API_COMPAT=0x10101000L']
+    GCC_WARN_INHIBIT_ALL_WARNINGS: YES
+    CLANG_ENABLE_MODULES: YES
+    ENABLE_BITCODE: NO
+targets:
+  Mirror:
+    type: application
+    platform: iOS
+    sources:
+      - path: Mirror
+      - path: Vendor/UxPlay
+        excludes: ['mdnsd', '**/CMakeLists.txt']
+        compilerFlags: '-w'
+    dependencies:
+      - sdk: AVFoundation.framework
+      - sdk: AudioToolbox.framework
+      - sdk: CoreMedia.framework
+      - sdk: VideoToolbox.framework
+      - sdk: libz.tbd
+      - framework: Vendor/Dependencies/lib/libcrypto.a
+        embed: false
+      - framework: Vendor/Dependencies/lib/libplist-2.0.a
+        embed: false
+    info:
+      path: Mirror/Info.plist
+      properties:
+        CFBundleDisplayName: Mirror
+        CFBundleVersion: '8'
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Mirror
+                UISceneDelegateClassName: MirrorSceneDelegate
+        UILaunchScreen: {}
+        NSLocalNetworkUsageDescription: Mirror receives your iPhone screen over your local Wi-Fi network.
+        NSBonjourServices: ['_airplay._tcp', '_raop._tcp']
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight, UIInterfaceOrientationPortraitUpsideDown]
+        UIRequiresFullScreen: true
+        ITSAppUsesNonExemptEncryption: true
+schemes:
+  Mirror:
+    build:
+      targets:
+        Mirror: all
